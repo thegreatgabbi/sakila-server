@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Release Year</th>
+            <th>Rating</th>
+            <th>Special Features</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each films}}
+            <tr>
+                <td>{{this.film_id}}</td>
+                <td>{{this.title}}</td>
+                <td>{{this.description}}</td>
+                <td>{{this.release_year}}</td>
+                <td>{{this.rating}}</td>
+                <td>{{this.special_features}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
